@@ -52,7 +52,7 @@ var locations = [
 function placeWeatherIcon(icon, location) {
   map.loadImage (
     // iconen uit OpenWeather inladen
-    'https://openweathermap.org/img/w/' + icon + '.png',
+    'https://openweathermap.org/img/wn/' + icon + '@2x' + '.png',
     function (error, image) {
       if (error) throw error;
 
@@ -77,7 +77,7 @@ function placeWeatherIcon(icon, location) {
         source: "pin" + location.name,
         layout: {
           "icon-image": "weatherIcon" + location.name,
-          "icon-size": 1
+          "icon-size": 0.5
         }
       });
     }
@@ -192,7 +192,7 @@ map.on('load', function() {
     popup.setLngLat(coordinates).setHTML(description).addTo(map);
   });
 
-  map.on('mouseleave', 'popupText', function () {
+  map.on('mouseleave', 'popupText', function (e) {
       map.getCanvas().style.cursor = '';  // veranderd de pointer naar een cursor wanneer je van een locatie af gaat
       popup.remove(); // / haalt de popup weg als je de muis verwijderd van een locatie
   });
