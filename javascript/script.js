@@ -106,6 +106,7 @@ map.on('load', function() {
 });
 
 // popup tekst per locatie die getoont moet worden
+// functie werk alleen helaas niet
 map.on('load', function() {
   map.addSource('popupText', {
     'type': 'geojson',
