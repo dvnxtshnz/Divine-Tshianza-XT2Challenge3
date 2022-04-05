@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+body {
+	background-color: #F7F8FA;
+	font-family: 'Ubuntu', sans-serif;
+	color: #474862;
+}
+
+header {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+img {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.mainContent {
+	width: 80%;
+	margin: auto;
+}
+
+h1 {
+	font-size:  1.6rem;
+	line-height: 0;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.landingMap {
+	margin-top: 25px;
+	margin-bottom: 5%;
+}
+
+#map {
+  height: 40vh;
+  width: 80vw;
+}
+
+.mapboxgl-ctrl-geocoder { /* opmaak zoekbalk in jaart */
+	width: 33.3333%;
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 360px;
+}
+
+.mapboxgl-popup-content { /* opmaak popup */
+  padding: 20px;
+  color: #fff;
+  background-color: #474862;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(149, 157, 165, 0.2);
+}
+
+.mapboxgl-popup-content p {
+	font-size: 0.75rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+:: Tablet (768PX and up)
+- - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 768px) {
+	#map {
+		height: 60vh;
+  	width: 80vw;
+	}
+}

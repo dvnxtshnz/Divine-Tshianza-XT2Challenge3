@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/favicon.svg">
+
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+	<link href="stylesheet/layout.css" type="text/css" rel="stylesheet" />
+
+	<title>SpaceX landingskaart</title>
+</head>
+<body>
+	<section class="container">
+		<header>
+			<!-- logo SpaceX -->
+			<figure>
+				<img src="images/logo-SpaceX.svg" alt="SpaceX logo">
+			</figure>
+		</header>
+
+		<section class="mainContent">
+			<section class="title">
+				<h1>Landingskaart</h1>
+				<p>Welkom op het SpaceX live dashboard waar u de landingskaart kunt bekijken.</p>
+			</section>
+
+			<section class="landingMap">
+				<!-- de kaart -->
+				<div id="map"></div>
+			</section>
+		</section>
+	</section>
+
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+
+	<script src="javascript/script.js"></script>
+</body>
+</html>
